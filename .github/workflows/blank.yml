@@ -17,7 +17,7 @@ on:
   
 concurrency:
   group: scheduled-environment
-  cancel-in-progress: false # 이미 실행 중이면 새로 트리거된 건 취소하지 않고 무시
+  cancel-in-progress: true # 이미 실행 중이면 새로 트리거된 건 취소하지 않고 무시
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
